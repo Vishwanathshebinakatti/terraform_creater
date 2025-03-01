@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terraform-s3" {
-  bucket = "demo-tf-test-bucket"
+  bucket = "demo-tf-test-xyz-bucket"
 
   lifecycle {
     prevent_destroy = false
@@ -16,7 +16,7 @@ resource "aws_dynamodb_table" "terraform-dynamodb-table" {
   hash_key       = "LockID"
 
   attribute {
-    name = "UserId"
+    name = "LockID"
     type = "S"
   }
 }
