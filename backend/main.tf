@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terraform-s3" {
-  bucket = "demo-tf-test-xyz-bucket"
+  bucket = "demo-tf-test-abc-bucket"
 
   lifecycle {
     prevent_destroy = false
